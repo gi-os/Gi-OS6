@@ -1,10 +1,10 @@
 .topbar {
-  
+margin-top:0px;
 background:#60bdff;
 text-align:center;
 position:relative;
 left:0;
 top:0;
-width:100%;
+width: 100%;
 Height:50px;
 }
