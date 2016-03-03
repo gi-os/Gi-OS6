@@ -1,7 +1,7 @@
 .topbar {
 background:#30bdff;
 text-align:center;
-position:relative;
+position:fixed;
 width:100%;
 Height:50px;
 }
