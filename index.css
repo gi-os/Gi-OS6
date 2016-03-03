@@ -1,4 +1,7 @@
 .topbar {
-background:#ffffff;
+background:#30bdff;
 text-align:center;
+position:absolute;
+width:100%;
+Height:50px;
 }
