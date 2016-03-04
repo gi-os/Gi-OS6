@@ -1,10 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow:hidden;
+
+}
 .topbar {
 font-family: 'Open Sans', sans-serif;
 font-size: 30px;
 color: #3F9777;
 text-align:center;
 Width: 100%;
-Height:120px;
+Height:100px;
 background-color:#ffffff;
 }
 .HW {
