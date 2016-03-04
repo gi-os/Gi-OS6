@@ -2,4 +2,4 @@ var pattern = Trianglify({
     width: window.innerWidth,
     height: window.innerHeight
   });
-document.body.appendChild(pattern.canvas())
+document.body.style.backgroundImage = pattern.dataUrl;
