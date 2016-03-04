@@ -1,8 +1,5 @@
-var w = window.innerWidth
-var h = window.innerHeight
 var pattern = Trianglify({
-  height: h,
-  width: w,
-  cell_size: 40});
-
-document.body.appendChild(pattern.canvas());
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+document.body.appendChild(pattern.canvas())
