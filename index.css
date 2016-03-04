@@ -1,8 +1,16 @@
 .topbar {
-
-background:#60bdff;
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+background:#4E2A3E;
 text-align:center;
-
-width: 100%;
+Width: 100%;
+Height:50px;
+}
+.HW {
+background:#294C40;
+text-align:center;
+font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+Width: 100%;
 Height:50px;
 }
