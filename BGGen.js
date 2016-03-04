@@ -3,4 +3,3 @@ var pattern = Trianglify({
     height: window.innerHeight
   });
 document.body.style.backgroundImage = "url(pattern.png();)";
-alert pattern.png();
