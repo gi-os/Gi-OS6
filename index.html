@@ -9,6 +9,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
  <link href='index.css' rel='stylesheet' type='text/css'>
                    <script src="index.js">
+                  </script>
                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
                    
                   <center>
@@ -214,4 +215,37 @@ document.getElementsByClassName('app_calc')[0].onclick = function() {
         
     </div>
 </div>
+<script>
+  var notes = document.getElementsByClassName('app_notes')[0];
+  var maps = document.getElementsByClassName('app_maps')[0],
+    $boxTwo = $('.app_maps:eq(1)');
+
+  var sketch = document.getElementsByClassName('app_sketch')[0],
+    $boxTwo = $('.app_sketch:eq(1)');
+  var miku = document.getElementsByClassName('app_miku')[0],
+    $boxTwo = $('.app_miku:eq(1)');
+  var pref = document.getElementsByClassName('app_pref')[0],
+    $boxTwo = $('.app_miku:eq(1)');
+  var wiki = document.getElementsByClassName('app_wiki')[0],
+    $boxTwo = $('.app_wiki:eq(1)');
+  var calc = document.getElementsByClassName('app_calc')[0],
+    $boxTwo = $('.app_calc:eq(1)');
+
+  $(document).ready(function() {
+    $('#layer-one').mousemove(function(e) {
+      parallax(e, this, 1);
+      parallax(e, document.getElementById('layer-two'), 2);
+      parallax(e, document.getElementById('layer-three'), 3);
+    });
+  });
+
+  function parallax(e, target, layer) {
+    var layer_coeff = 10 / layer;
+    var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
+    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+    $(target).offset({
+      top: y,
+      left: x
+    });
+  };
 </script>
