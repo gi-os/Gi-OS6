@@ -352,8 +352,10 @@ body {
 
 .layer {
   padding-top: 160px;
-  color: white;
+
   transition: all .1s ease;
+  width:120%;
+
 }
 
 #base-layer {
@@ -361,4 +363,5 @@ body {
   position: relative;
   top: 0px;
   transition: all .1s ease;
+  
 }
