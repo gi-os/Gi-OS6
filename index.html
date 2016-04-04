@@ -1,4 +1,4 @@
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div id="base-layer">
 
  
@@ -19,12 +19,11 @@
 
 
 <div class="app_notes">
-<img src="http://i65.tinypic.com/ta5210_th.jpg" alt="app open" style="width:40px;height:40px; position:relative; left:2px; top:2px;">
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">note</i>
+
   </img>
 <script>
   //notes
-
-
 document.getElementsByClassName('app_notes')[0].onclick = function() {
   if(this.innerHTML === ' ')
   { 
@@ -33,7 +32,6 @@ document.getElementsByClassName('app_notes')[0].onclick = function() {
   } else {
      this.innerHTML = ' ';
      setTimeout(function(){location.href='http://s.codepen.io/gi-os/debug/LNbYzY';}, 500) 
-
 maps.classList.add('hide');
     wiki.classList.add('hide');
     sketch.classList.add('hide');
@@ -45,10 +43,9 @@ maps.classList.add('hide');
 }
                     </script></div>
 <div class="app_sketch" >
-<img src="http://i64.tinypic.com/1tauc3_th.png" alt="app open" style="width:40px;height:40px; position:relative; left:0px; top:4px;">
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">brush</i>
   </img>
                   <script>//sketch
-
 document.getElementsByClassName('app_sketch')[0].onclick = function() {
   if(this.innerHTML === ' ')
   { 
@@ -71,10 +68,8 @@ maps.classList.add('hide');
 
 
 <div class="app_miku" >
-<img src="http://i64.tinypic.com/v6smxc_th.png" alt="app open" style="width:40px;height:40px; position:relative; top:6px;">
-  </img>
+ <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">hearing</i>
       <script>//miku
-
 document.getElementsByClassName('app_miku')[0].onclick = function() {
   if(this.innerHTML === ' ')
   { 
@@ -98,12 +93,11 @@ maps.classList.add('hide');
 
 
 <div class="app_pref" >
-<img src="http://i64.tinypic.com/waikhe_th.png" alt="app open" style="width:40px;height:40px; position:relative; top:5px; left:0px;">
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">settings</i>
 
   </img>
   <script>
   //pref
-
 document.getElementsByClassName('app_pref')[0].onclick = function() {
   if(this.innerHTML === ' ')
   { 
@@ -122,19 +116,15 @@ document.getElementsByClassName('app_pref')[0].onclick = function() {
     setTimeout(function(){location.href='http://s.codepen.io/gi-os/debug/wGoMOZ';}, 500) 
   }  
 }
-
-
 </script>
 
 </div>
 
 <div class="app_wiki" >
-<img src="http://i67.tinypic.com/309sxu8_th.png" alt="app open" style="width:40px;height:40px; position:relative; top:5px; left:0px;">
-  </img>
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">language</i>
 
   <script>
   //wiki
-
 document.getElementsByClassName('app_wiki')[0].onclick = function() {
   if(this.innerHTML === ' ')
   { 
@@ -158,8 +148,7 @@ calc.classList.add('hide');
 
 
 <div class="app_maps" >
-<img src="http://i66.tinypic.com/b7jbwj_th.png" alt="app open" style="width:40px;height:40px; position:relative; top:5px; left:0px;">
-  </img>
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">place</i>
 <script>
   //maps
 document.getElementsByClassName('app_maps')[0].onclick = function() {
@@ -185,7 +174,7 @@ document.getElementsByClassName('app_maps')[0].onclick = function() {
 </div>
 <div class="app_calc" >
   
-<img src="http://i66.tinypic.com/b7jbwj_th.png" alt="app open" style="width:40px;height:40px; position:relative; top:5px; left:0px;">
+  <i class="material-icons md-light" style="left:-5px; top:-5px; position:relative; font-size:60px;">iso</i>
   </img>
 <script>
 //calc
@@ -220,7 +209,6 @@ document.getElementsByClassName('app_calc')[0].onclick = function() {
   var notes = document.getElementsByClassName('app_notes')[0];
   var maps = document.getElementsByClassName('app_maps')[0],
     $boxTwo = $('.app_maps:eq(1)');
-
   var sketch = document.getElementsByClassName('app_sketch')[0],
     $boxTwo = $('.app_sketch:eq(1)');
   var miku = document.getElementsByClassName('app_miku')[0],
@@ -231,7 +219,6 @@ document.getElementsByClassName('app_calc')[0].onclick = function() {
     $boxTwo = $('.app_wiki:eq(1)');
   var calc = document.getElementsByClassName('app_calc')[0],
     $boxTwo = $('.app_calc:eq(1)');
-
   $(document).ready(function() {
     $('#layer-one').mousemove(function(e) {
       parallax(e, this, 1);
@@ -239,7 +226,6 @@ document.getElementsByClassName('app_calc')[0].onclick = function() {
       parallax(e, document.getElementById('layer-three'), 3);
     });
   });
-
   function parallax(e, target, layer) {
     var layer_coeff = 10 / layer;
     var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
