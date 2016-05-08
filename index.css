@@ -354,7 +354,7 @@ body {
 .layer {
   padding-top: 160px;
 
-  transition: all .1s ease;
+  transition: all .0s ease;
 
 }
 
@@ -362,7 +362,7 @@ body {
   overflow: hidden;
   position: relative;
   top: 0px;
-  transition: all .1s ease;
+  transition: all .0s ease;
   
 }
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
