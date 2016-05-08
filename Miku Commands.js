@@ -11,7 +11,7 @@ function startDictation() {
      recognition.continuous = false;
      recognition.interimResults = false;
 
-     recognition.lang = "en-US";
+     recognition.lang = "tr-TR";
      recognition.start();
 
      recognition.onresult = function(e) {
