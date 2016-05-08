@@ -29,8 +29,8 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
   function parallax(e, target, layer) {
     var layer_coeff = 10 / layer;
-    var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
-    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+    var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageY - ($(window).width() / 5)) / layer_coeff;
+    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageX - ($(window).height() / 5)) / layer_coeff;
     $(target).offset({
       top: y,
       left: x
