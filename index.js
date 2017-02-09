@@ -32,7 +32,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
     var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageY - ($(window).width() / 5)) / layer_coeff;
     var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageX - ($(window).height() / 5)) / layer_coeff;
     $(target).offset({
-      top: y,
-      left: x
+      top: x,
+      left: y
     });
   };
